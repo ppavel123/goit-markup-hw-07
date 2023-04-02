@@ -166,6 +166,7 @@ h3 {
 	width: 24px;
 	justify-content: center;
 	align-items: center;
+	align-items: center;
 	cursor: pointer;
 
 	border-radius: 50%;
@@ -184,8 +185,24 @@ h3 {
 	list-style: none;
 }
 
+.link-mobile {
+	color: var(--primary-text-color);
+	text-decoration-line: none;
 
+	font-weight: 700;
+	font-size: 36px;
 
+	line-height: 1.2;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-index {
+	color: var(--button-hover-color);
+}
+
+.item-mobile:not(:last-child) {
+	margin-bottom: 40px;
+}
 
 .address-mobile {
 	font-style: normal;
