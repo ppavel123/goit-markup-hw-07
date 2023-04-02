@@ -120,15 +120,15 @@ h3 {
 .button-burger {
 	/* width: 32px;
 	height: 22px; */
-	outline: 2px solid tomato;
+	/* outline: 2px solid tomato; */
 	border: none;
 	padding: 0;
 	background-color: transparent;
 	line-height: 0;
 	cursor: pointer;
-	fill: var(--primary-text-color);
+	stroke: var(--primary-text-color);
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 767px) {
@@ -147,8 +147,9 @@ h3 {
 .mobile-menu {
 	position: fixed;
 	width: 100%;
+	max-width: 428px;
 	height: 100%;
-	/* max-height: 796px; */
+	/* height: 796px; */
 	z-index: 1000;
 	top: 0;
 	left: 0;
@@ -271,6 +272,10 @@ h3 {
 .address-link-mail:hover,
 .mobile-social .footer-link:hover {
 	color: var(--button-hover-color);
+}
+
+.button-burger:hover {
+	stroke: var(--button-hover-color);
 }
 
 .mobile-menu-close:hover,
