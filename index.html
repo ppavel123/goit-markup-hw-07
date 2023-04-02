@@ -36,7 +36,13 @@
 						<li class="item"><a href="" class="link">Contacts</a></li>
 					</ul>
 				</nav>
-
+				<button type="button" class="button-burger">
+					<svg class="mobile-menu-icon" width="32" height="22">
+						<use
+							href="./images/symbol-defs-fix.svg#charm_menu-hamburger-1"
+						></use>
+					</svg>
+				</button>
 				<address class="address">
 					<ul class="list address-list">
 						<li class="item">
@@ -51,6 +57,66 @@
 						</li>
 					</ul>
 				</address>
+			</div>
+			<div class="mobile-menu">
+				<button class="mobile-menu-close">
+					<svg width="8" height="8">
+						<use href="./images/symbol-defs-fix.svg#close-black"></use>
+					</svg>
+				</button>
+				<ul class="site-nav-mobile list">
+					<li class="item-mobile">
+						<a href="./index.html" class="link-mobile main-index">Studio</a>
+					</li>
+					<li class="item-mobile">
+						<a href="./portfolio.html" class="link-mobile">Portfolio</a>
+					</li>
+					<li class="item-mobile">
+						<a href="" class="link-mobile">Contacts</a>
+					</li>
+				</ul>
+				<address class="address-mobile">
+					<ul class="list address-list-mobile">
+						<li class="item">
+							<a href="mailto:info@devstudio.com" class="address-link"
+								>info@devstudio.com</a
+							>
+						</li>
+						<li class="item">
+							<a href="tel:+110001111111" class="address-link"
+								>+11 (000) 111-11-11</a
+							>
+						</li>
+					</ul>
+				</address>
+				<ul class="mobile-social">
+					<li class="footer-item">
+						<a href="" class="footer-link">
+							<svg width="24" height="24">
+								<use href="./images/symbol-defs-fix.svg#instagram"></use></svg
+						></a>
+					</li>
+					<li class="footer-item">
+						<a href="" class="footer-link"
+							><svg width="24" height="24">
+								<use href="./images/symbol-defs-fix.svg#twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer-item">
+						<a href="" class="footer-link"
+							><svg width="24" height="24">
+								<use href="./images/symbol-defs-fix.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer-item">
+						<a href="" class="footer-link"
+							><svg width="24" height="24">
+								<use href="./images/symbol-defs-fix.svg#linkedin"></use></svg
+						></a>
+					</li>
+				</ul>
 			</div>
 		</header>
 
@@ -159,6 +225,7 @@
 					<ul class="team-list">
 						<li class="team-card">
 							<img
+								srcset="./images/photo_mark_guerrero@2x.jpg 2x"
 								src="./images/photo_mark_guerrero.jpg"
 								alt="Photo Mark Guerrero"
 								width="264"
@@ -204,6 +271,7 @@
 						</li>
 						<li class="team-card">
 							<img
+								srcset="./images/photo_tom_ford@2x.jpg 2x"
 								src="./images/photo_tom_ford.jpg"
 								alt="Photo Tom Ford"
 								width="264"
@@ -249,6 +317,7 @@
 						</li>
 						<li class="team-card">
 							<img
+								srcset="./images/photo_camila_garcia@2x.jpg 2x"
 								src="./images/photo_camila_garcia.jpg"
 								alt="Photo Camila Garcia"
 								width="264"
@@ -294,6 +363,7 @@
 						</li>
 						<li class="team-card">
 							<img
+								srcset="./images/photo_daniel_wilson@2x.jpg 2x"
 								src="./images/photo_daniel_wilson.jpg"
 								alt="Photo Daniel Wilson"
 								width="264"
@@ -528,5 +598,6 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
